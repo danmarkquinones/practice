@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>CRUD PRACTICE using jQuery</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	<div class="container-fluid px-0 bg-dark text-center text-light py-2">
+		<h2>Machine Problems</h2>
+	</div>
+
+	<div class="container-fluid">	
+		<section class="row">
+		<!-- TODO LIST -->
+			<div class="col-12 col-lg-5 mt-5 border p-2 mb-1">
+				<h3>To Do List</h3>
+				<form action="">	
+					<input id="input-task" type="text" class="form-control">
+					<button id="add-btn" class="btn btn-success">Add Task</button>
+					<span class="text-danger notice d-block"></span>
+				</form>
+
+				<div class="task-list">
+					<p> <input type="text" value="First Task Sample" disabled> <button  class="btn btn-primary editBtn">Edit</button><button class="btn btn-success saveBtn">Save</button><button class="btn btn-danger deleteBtn">Delete</button></p>
+				</div>
+			</div>
+		<!-- END OF TODO LIST -->
+			<div class="col-12 col-lg-7 mt-5 container">
+				<div class="row">
+					
+				<!-- SIMPLE CALCULATOR -->
+					<div id="calculator" class="col-12 col-lg-7 border p-2 mb-1">
+						<h3>Simple Calculator</h3>
+						<div class="answer">
+							<h2 class="bg-secondary text-center">
+								Answer
+							</h2>
+						</div>
+
+						<input id="input-num-1" type="number">
+						<input id="input-num-2" type="number">
+						<hr>
+						<button class="btn btn-success addBtn">Add</button>
+						<button class="btn btn-warning subtractBtn">Subtract</button>
+						<button class="btn btn-primary multiplyBtn">Multiply</button>
+						<button class="btn btn-secondary divideBtn">Divide</button>
+						<button class="btn btn-danger powerBtn">Exponent</button>
+					</div>
+				<!-- END OF SIMPLE CALCULATOR -->
+
+				<!-- Odd or Even -->
+					<div class="col-12 col-lg-5 p-2 border mb-1">
+						<h3>Odd | Even | Prime</h3>
+						<div class="oddEven text-center bg-secondary">
+							<h2>ANSWER</h2>
+							<small class="text-light d-block"></small>
+						</div>
+						<input id="test-input" type="number" class="form-control">
+						<button class="btn btn-success mt-1 btn-block testOddEven">Test the Number</button>
+					</div>
+				<!-- End Odd or Even -->
+
+				<!-- LEAP YEAR -->
+					<div class="col-12 col-lg-6 border p-2 mb-1">
+						<h3>LEAP YEAR</h3>
+						<div class="leapYear text-center bg-secondary">
+							<h2>INSERT YEAR BELOW</h2>
+						</div>
+						<input id="year-input" type="number" class="form-control">
+						<button class="btn btn-success mt-1 btn-block testYear">Leap Year or Not?</button>
+					</div>
+				<!-- END OF LEAP YEAR -->
+				</div>
+				
+			</div>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
