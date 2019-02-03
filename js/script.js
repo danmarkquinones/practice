@@ -123,4 +123,26 @@ $(document).ready(function(){
 		}
 	})
 //===========END OF LEAP YEAR =========================================================
+
+//===========CONVERSION=============================================================
+
+	$('#peso').keyup(function(){
+		let pesoVal = $('#peso')
+		$('#usd').val( pesoVal.val() * 0.019)
+		$('#yen').val(pesoVal.val() * 2.09)
+	})
+
+	$('#usd').keyup(function(){
+		let usdVal = $('#usd')
+		$('#peso').val( usdVal.val() / 0.019)
+		$('#yen').val( usdVal.val() / 0.0091)
+	})
+
+	$('#yen').keyup(function(){
+		let yenVal = $('#yen')
+		$('#peso').val( yenVal.val() / 2.09)
+		$('#usd').val( yenVal.val() * 0.0091)
+	})
+
+//===========END OF CONVERSION=============================================================
 })
